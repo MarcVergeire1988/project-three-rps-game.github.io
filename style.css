@@ -1,0 +1,83 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 2px;
+/* BACKGROUND */
+    background: url(./wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -20px;
+}
+
+/* FONTS COLORING */
+h1 {
+    font-size: 3rem;
+}
+.rock {
+    color: #3dcccc;
+    text-shadow: 5px 15px 3px #008080;
+}
+.paper{
+    color: #008080;
+    text-shadow: 2px 8px #016b6b;
+}
+.scissors {
+    color: #b87333;
+    text-shadow: -10px 15px 5px  #995618;
+}
+.greenText,  #playerScoreDisplay{
+    color: greenyellow;
+}
+.redText, #computerScoreDisplay{
+    color: red;
+}
+.whiteText{
+    color: white;
+}
+.scoreDisplay{
+    font-size: 1.5rem;
+}
+
+/* CHOICES */
+.choices {
+    margin-bottom: 20px;
+}
+.choices button {
+    font-size: 8rem;
+    min-width: 160px;
+    margin: 5px 30px;
+    border-radius: 250px;
+    background: lightsalmon;
+    border: none;
+    cursor: pointer;
+    padding: 0 0 15px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    transition: background-color 0.3s ease;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+/* .choices button:hover,
+.choices button:focus, */
+.choices button:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+    background-color: rgb(243, 233, 233);
+}
+
+/* PLAYER AND COMPUTER DISPLAY */
+#playerDisplay, #computerDisplay {
+    font-size: 1.5rem;
+}
+#resultDisplay {
+    font-size: 50px;
+    margin: 18px 0;
+}
